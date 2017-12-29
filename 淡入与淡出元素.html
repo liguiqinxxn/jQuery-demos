@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>用户协议</title>
+</head>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    	$("#div1").fadeToggle();
+    	$("#div2").fadeToggle("slow");
+    	$("#div3").fadeToggle(3000);
+    });
+   });
+</script> 
+<body>
+<p>以下实例演示了fadeToggle（）使用不同speed（速度）参数。</p>
+<button>点击淡入/淡出div元素。</button>
+<br/><br/>
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div><br>
+</body>
+</html>

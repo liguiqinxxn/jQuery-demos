@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>用户协议</title>
+</head>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$("#flip").click(function(){
+		$("#panel").slideDown(5000);
+	});
+	$("#stop").click(function(){
+		$("#panel").stop();
+	});
+});
+
+</script>
+<style>
+	#panel,#flip
+	{
+		padding: 5px;
+		text-align: center;
+		background-color: #e5eecc;
+		boder:solid 1px #c3c3c3;
+	}
+	#panel
+	{
+		padding: 50px;
+		display: none;
+	}
+</style>
+<body>
+<button id="stop">停止滑动</button>
+<div id="flip">点我向下滑动画板</div>
+<div id="panel">Hello World!</div>
+	
+</body>
+</html>

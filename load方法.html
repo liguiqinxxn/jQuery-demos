@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>用户协议</title>
+</head>
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("#div1").load("file:///G:/Sublime%20Text3/%E5%AE%9E%E4%BE%8B/jQUERY/demo_test.txt",function(responseTxt,statusTxt,xhr){
+			//if (statusTxt=="success") {
+			//	alert("外部内容加载成功！");
+			//};
+			//if (statusTxt=="error") {
+				//alert("Error:"+xhr.status+":"+xhr.statusTxt);
+			//};
+		});
+	});
+});
+
+</script>
+<body>
+<div id="div1"><h2>使用jQuery AJAX修改该文本</h2></div>
+<button>获取外部内容</button>
+</body>
+</html>

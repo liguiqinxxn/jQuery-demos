@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>用户协议</title>
+</head>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		$("#test1").text(function(i,origText){
+			return"旧文本："+origText+"新文本：Hello world！(index:"+i+")";
+		});
+	});
+	$("#btn2").click(function(){
+		$("#test2").html(function(i,origText){
+			return "旧 HTML："+origText+"新html:hello <b>world！</b>(index:"+i+")";
+		});
+	});
+});
+
+</script>
+<body>
+<p id="test1">这是一个有<b>粗体</b>字的段落。</p>
+<p id="test2">这是另外一个有<b>粗体</b>字的段落。</p>
+<button id="btn1">显示新/旧文本</button>
+<button id="btn2">显示新/旧HTML</button>
+</body>
+</html>

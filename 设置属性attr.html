@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+</head>
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#runoob").attr({
+      "href" : "http://www.runoob.com/jquery",
+      "title" : "jQuery 教程"
+    });
+	// 通过修改的 title 值来修改链接名称
+	title =  $("#runoob").attr('title');
+	$("#runoob").html(title);
+  });
+});
+</script>
+</head>
+
+<body>
+<p><a href="http://www.runoob.com" id="runoob">菜鸟教程</a></p>
+<button>修改 href 和 title</button>
+<p>点击按钮修改后，可以查看 href 和 title 是否变化。</p>
+</body>
+</html>

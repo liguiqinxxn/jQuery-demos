@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>用户协议</title>
+</head>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		$("#test1").text("Hello world!");
+	});
+	$("#btn2").click(function(){
+		$("#test2").html("<b>Hello world!</b>");
+	});
+	$("#btn3").click(function(){
+		$("#test3").val("RUNOOB");
+	});
+});
+</script>
+<body>
+<P id="test1">这是一个段落。</P>
+<p id="test2">这是另外一个段落。</p>
+<p>输入框：<input type="text" id="test3" value="菜鸟教程"></p>
+<button id="btn1">设置文本</button>
+<button id="btn2">设置HTML</button>
+<button id="btn3">设置值</button>
+</body>
+</html>
